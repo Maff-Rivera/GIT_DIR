@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="1097266979"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 06:00:55 p. m."/>
+        <attribute name="created" value="MTA5NzI2Njk3OTtERVNLVE9QLUdMUzUwNFI7MjAyNS0wMy0yNDswODozMjowMyBwLiBtLjszMDUw"/>
+        <attribute name="edited" value="MTA5NzI2Njk3OTtERVNLVE9QLUdMUzUwNFI7MjAyNS0wMy0yNTswNjowMDo1NSBwLiBtLjsyOzMxNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numdonas" type="Integer" array="False" size=""/>
+            <declare name="precio" type="Integer" array="False" size=""/>
+            <declare name="Total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese numero de donas&quot;" newline="True"/>
+            <input variable="numdonas"/>
+            <if expression="numdonas &lt; 30">
+                <then>
+                    <assign variable="precio" expression="(10.00)"/>
+                </then>
+                <else>
+                    <if expression="numdonas &gt;= 30">
+                        <then>
+                            <assign variable="precio" expression="(9.00)"/>
+                        </then>
+                        <else>
+                            <if expression="numdonas &lt;=49">
+                                <then>
+                                    <assign variable="precio" expression="(9.00)"/>
+                                </then>
+                                <else>
+                                    <if expression="numdonas &gt;=50">
+                                        <then>
+                                            <assign variable="precio" expression="(8.00)"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;algo salio mal&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="Total" expression="(numdonas * precio)"/>
+            <output expression="&quot;El total a pagar es:&quot;" newline="True"/>
+            <output expression="Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
