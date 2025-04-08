@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="1097266979"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 09:43:23 p. m."/>
+        <attribute name="created" value="MTA5NzI2Njk3OTtERVNLVE9QLUdMUzUwNFI7MjAyNS0wNC0wNzswOTowNjoxNSBwLiBtLjszMDU3"/>
+        <attribute name="edited" value="MTA5NzI2Njk3OTtERVNLVE9QLUdMUzUwNFI7MjAyNS0wNC0wNzswOTo0MzoyMyBwLiBtLjsxOzMxNjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, fac" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un n&#250;mero:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="fac" expression="1"/>
+            <while expression="n&gt;0">
+                <assign variable="fac" expression="fac*n"/>
+                <assign variable="n" expression="n-1"/>
+            </while>
+            <output expression="fac" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

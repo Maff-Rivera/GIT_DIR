@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="1097266979"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 10:10:17 p. m."/>
+        <attribute name="created" value="MTA5NzI2Njk3OTtERVNLVE9QLUdMUzUwNFI7MjAyNS0wNC0wNzswOTo0MzozNSBwLiBtLjszMDYw"/>
+        <attribute name="edited" value="MTA5NzI2Njk3OTtERVNLVE9QLUdMUzUwNFI7MjAyNS0wNC0wNzsxMDoxMDoxNyBwLiBtLjsxOzMxNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z, conta" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <assign variable="y" expression="2"/>
+            <assign variable="conta" expression="2"/>
+            <output expression="x" newline="True"/>
+            <output expression="y" newline="True"/>
+            <while expression="conta&lt;64">
+                <assign variable="z" expression="x+y"/>
+                <output expression="z" newline="True"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="z"/>
+                <assign variable="conta" expression="conta+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
